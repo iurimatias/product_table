@@ -1,9 +1,11 @@
 
+## Instalation
 
-steps:
+`gem install product_table`
 
-bundle
-rake build
-gem install pkg/product_table-0.0.1.gem
-product_table -n 10
+## Running Instructions
+
+### Display product table of first 10 prime numbers
+
+`product_table -n 10`
 
