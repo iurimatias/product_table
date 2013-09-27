@@ -18,12 +18,12 @@ module ProductTable
 
       end
 
-      parser.parse!(params)
-
       if params.empty?
         puts parser.help() 
         exit
       end
+
+      parser.parse!(params)
 
       options
     end
