@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    prime_table (0.0.1)
+    product_table (0.0.1)
 
 GEM
   remote: http://rubygems.org/
@@ -27,6 +27,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  prime_table!
+  product_table!
   pry
   rspec

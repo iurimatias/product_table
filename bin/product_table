@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
+require 'product_table'
+
+options = ProductTable::OptParser.parse(ARGV)
+primes = ProductTable::Calculator.calculate_primes(options.n)
+primes_product = ProductTable::Calculator.calculate_product(primes)
+ProductTable::Output.new(primes, primes_product).print_table
+

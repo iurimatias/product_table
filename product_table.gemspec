@@ -1,16 +1,16 @@
 $:.push File.expand_path("../lib", __FILE__)
-require "prime_table/version"
+require "product_table/version"
 
 Gem::Specification.new do |s|
-  s.name        = "prime_table"
-  s.version     = PrimeTable::VERSION
+  s.name        = "product_table"
+  s.version     = ProductTable::VERSION
   s.authors     = ["Iuri Matias"]
   s.email       = ["iuri.matias@gmail.com"]
-  s.homepage    = "https://github.com/iurimatias"
-  s.summary     = %q{}
+  s.homepage    = "https://github.com/iurimatias/product_table"
+  s.summary     = %q{code kata - calculate the produt of a list of numbers}
   s.description = %q{}
 
-  s.rubyforge_project = "prime_table"
+  s.rubyforge_project = "product_table"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

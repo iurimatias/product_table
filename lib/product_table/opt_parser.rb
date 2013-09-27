@@ -1,7 +1,7 @@
 require 'optparse'
 require 'ostruct'
 
-module PrimeTable
+module ProductTable
 
   class OptParser
 

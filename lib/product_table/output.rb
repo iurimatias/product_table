@@ -1,4 +1,4 @@
-module PrimeTable
+module ProductTable
 
   class Output
 

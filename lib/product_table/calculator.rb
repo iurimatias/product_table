@@ -1,6 +1,6 @@
 require 'matrix'
 
-module PrimeTable
+module ProductTable
 
   class Calculator
 

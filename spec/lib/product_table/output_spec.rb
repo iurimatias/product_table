@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-module PrimeTable
+module ProductTable
 
   describe Output do
 
