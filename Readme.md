@@ -1,3 +1,5 @@
+Product Table[![Code Climate](https://codeclimate.com/github/iurimatias/product_table.png)](https://codeclimate.com/github/iurimatias/product_table)
+======
 
 ## Instalation
 
