@@ -9,6 +9,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/iurimatias/product_table"
   s.summary     = %q{code kata - calculate the produt of a list of numbers}
   s.description = %q{}
+  s.license = 'MIT'
 
   s.rubyforge_project = "product_table"
 
