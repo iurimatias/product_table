@@ -27,3 +27,5 @@ output:
    23 |    46   69  115  161  253  299  391  437  529  667
    29 |    58   87  145  203  319  377  493  551  667  841
 ```
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/iurimatias/product_table/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
