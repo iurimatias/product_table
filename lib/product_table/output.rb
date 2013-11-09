@@ -13,7 +13,7 @@ module ProductTable
 
     def build_table
       @column_size = get_column_size + 2
-      @base_format = "%#{@column_size}s"*@number_list.count
+      @base_format = "%#{column_size}s"*number_list.count
 
       format, output = build_header    ""    , []
       format, output = build_separator format, output
@@ -24,30 +24,31 @@ module ProductTable
     end
 
     private
+      attr_accessor :column_size, :base_format, :number_list, :product_table
 
       #find element with most characters
       def get_column_size
-        all_elements = (@number_list + @product_table).flatten
+        all_elements = (number_list + product_table).flatten
         all_elements.map(&:to_s).max { |element| element.length }.length
       end
 
       def build_header(format="", output=[])
-        format += "%#{@column_size}s | " + @base_format
+        format += "%#{column_size}s | " + base_format
         output << " "
-        output << @number_list
+        output << number_list
         [format, output]
       end
 
       def build_separator(format="", output=[])
         format += "%s"
-        output << "\n" + "-" * ((@column_size * @number_list.count) + 10)
+        output << "\n" + "-" * ((column_size * number_list.count) + 10)
         [format, output]
       end
 
       def build_rows(format="", output=[])
-        @product_table.each_with_index do |row, index|
-          row_num = @number_list[index]
-          format += "\n%#{@column_size}s | " + @base_format
+        product_table.each_with_index do |row, index|
+          row_num = number_list[index]
+          format += "\n%#{column_size}s | " + base_format
           output << row_num.to_s
           output << row
         end
